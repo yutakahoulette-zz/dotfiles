@@ -37,8 +37,20 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+
 set laststatus=2
-set statusline+=%F
+set statusline=
+set statusline+=%#PmenuSel#
+set statusline+=\ %F
+set statusline+=%m
+set statusline+=%#LineNr#
+set statusline+=%{fugitive#statusline()}
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+
 set nojoinspaces
 set tabstop=2
 set softtabstop=2
