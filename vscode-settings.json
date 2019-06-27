@@ -1,0 +1,87 @@
+{
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["s"],
+      "after": ["<cr>"],
+      "commands": [
+        {
+          "command": "workbench.action.files.save",
+          "args": []
+        }
+      ]
+    },
+    {
+      "before": ["t", "h"],
+      "after": ["<cr>"],
+      "commands": [
+        {
+          "command": ":tabfirst"
+        }
+      ]
+    },
+    {
+      "before": ["t", "k"],
+      "after": ["<cr>"],
+      "commands": [
+        {
+          "command": ":tabnext"
+        }
+      ]
+    },
+    {
+      "before": ["t", "j"],
+      "after": ["<cr>"],
+      "commands": [
+        {
+          "command": ":tabprev"
+        }
+      ]
+    },
+    {
+      "before": ["t", "l"],
+      "after": ["<cr>"],
+      "commands": [
+        {
+          "command": ":tablast"
+        }
+      ]
+    }
+  ],
+  "vim.leader": ",",
+  "vim.easymotion": true,
+  "workbench.colorTheme": "GitHub Plus",
+  "workbench.statusBar.feedback.visible": false,
+  "explorer.confirmDelete": false,
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "window.zoomLevel": 0,
+
+  "editor.minimap.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "editor.formatOnSave": true,
+
+  "colorize.languages": ["javascript"],
+
+  "html.autoClosingTags": false,
+  "html.format.endWithNewline": true,
+  "html.format.enable": false,
+  "prettier.arrowParens": "always",
+  "prettier.eslintIntegration": true,
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "extensions.ignoreRecommendations": true,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "breadcrumbs.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always"
+}
